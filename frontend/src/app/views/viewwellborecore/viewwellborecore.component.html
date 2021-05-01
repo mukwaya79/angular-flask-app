@@ -1,0 +1,101 @@
+<div class="container">
+    <div >
+        <h2 class=" text-center mt-3 mb-3 bg-light">
+            <button type="submit" class="mr-5 btn btn-info" routerLink='/main'>
+            <i class="far fa-arrow-alt-circle-left mr-3"></i>Back
+            </button>   
+         WellboreCore Data
+         <button type="submit" class="ml-5 btn btn-info" routerLink='/wellborecore'>
+            <i class="far fa-arrow-alt-circle-left mr-3"></i>Add wellborecore data
+            </button> 
+    </h2>
+    </div>
+    <table  class="table table-striped table-responsive-sm">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>wellborename</td>
+                <td>corenumber</td>
+                <td>coredate</td>
+                <td>coringcontractor</td>
+                <td>coretopmdrt</td>
+                <td>corebottommdrt</td>
+                <td>coretoptvd</td>
+                <td>corebottomtvd</td>
+                <td>cutlength</td>
+                <td>cutlengthtvd</td>
+                <td>recoveredlength</td>
+                <td>topformation</td>
+                <td>corerecovery</td>
+                <td>bottomformation</td>
+                <td>filesize</td>
+                <td>corepicturesoftcopypath</td>
+                <td>corepicturehyperlink</td>
+                <td>openduedate</td>
+                <td>securitygrade</td>
+                <td>corereportsoftcopypath</td>
+                <td>corereporthyperlink</td>
+                <td>documentformat</td>
+                <td>documenttitle</td>
+                <td>comments</td>
+                <td>modifiedon</td>
+                <td>createdby</td>
+                <td>modifiedby</td>
+                <td>datecreated</td>
+                <td>pictureuploaddate</td>
+                <td>reportuploaddate</td>
+                <td>receivedate</td>
+                <td>recorddate</td>
+                <td>cored</td>
+                <td>documentdate</td>
+                <td>documentname</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Wellborecore.results">
+                <td>{{item.id}}</td>
+                <td>{{item.wellborename}}</td>
+                <td>{{item.corenumber}}</td>
+                <td>{{item.coredate}}</td>
+                <td>{{item.coringcontractor}}</td>
+                <td>{{item.coretopmdrt}}</td>
+                <td>{{item.corebottommdrt}}</td>
+                <td>{{item.coretoptvd}}</td>
+                <td>{{item.corebottomtvd}}</td>
+                <td>{{item.cutlength}}</td>
+                <td>{{item.cutlengthtvd}}</td>
+                <td>{{item.recoveredlength}}</td>
+                <td>{{item.topformation}}</td>
+                <td>{{item.corerecovery}}</td>
+                <td>{{item.bottomformation}}</td>
+                <td>{{item.filesize}}</td>
+                <td>{{item.corepicturesoftcopypath}}</td>
+                <td>{{item.corepicturehyperlink}}</td>
+                <td>{{item.openduedate}}</td>
+                <td>{{item.securitygrade}}</td>
+                <td>{{item.corereportsoftcopypath}}</td>
+                <td>{{item.corereporthyperlink}}</td>
+                <td>{{item.documentformat}}</td>
+                <td>{{item.documenttitle}}</td>
+                <td>{{item.comments}}</td>
+                <td>{{item.modifiedon}}</td>
+                <td>{{item.createdby}}</td>
+                <td>{{item.modifiedby}}</td>
+                <td>{{item.datecreated}}</td>
+                <td>{{item.pictureuploaddate}}</td>
+                <td>{{item.reportuploaddate}}</td>
+                <td>{{item.receivedate}}</td>      
+                <td>{{item.recorddate}}</td>   
+                <td>{{item.cored}}</td>      
+                <td>{{item.documentdate}}</td> 
+                <td>{{item.documentname}}</td>
+                <td><a routerLink='/wellborecore/update/{{item.id}}' ><i class="fas fa-user-edit point"></i></a></td>
+                <td><a (click)='removeitem(item.id)'><i class="far fa-trash-alt point" ></i></a></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+

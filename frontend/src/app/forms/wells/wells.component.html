@@ -1,0 +1,57 @@
+
+  <div class="container mt-3">
+      <h3 class="text-center">
+          Add Wells Data
+      </h3>
+      
+      <br>
+       <div class="row">
+         <div class="col-md-6 offset-3">
+          <form #wellsform=ngForm class="bg-light">
+              <div class="form-row">
+            <div class="form-group col">
+              <label for="wellname">Well Name</label>
+              <input type="text" [(ngModel)]='form.wellname' name="wellname" class="form-control">
+             
+            </div>
+            <div class="form-group col">
+              <label for="sampletype">Sample Type</label>
+              <input type="text" [(ngModel)]='form.sampletype' name="sampletype" class='form-control'>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col">
+                <label for="layer">Layer</label>
+                <input type="text" [(ngModel)]='form.layer' name="layer" class='form-control'>
+              </div>
+            <div class="form-group col">
+                <label for="initialdepth">Initial Depth</label>
+                <input type="text" [(ngModel)]='form.initialdepth' name="initialdepth" class='form-control'>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="terminationdepth">Termination Depth</label>
+               <input type="text" [(ngModel)]='form.terminationdepth' name="terminationdepth" class='form-control'>
+              </div>
+              <div class="form-group col">
+                <label for="samplebucket">Sample Bucket</label>
+                <input type="text" [(ngModel)]='form.samplebucket' name="samplebucket" class='form-control'>
+              </div>
+            </div>
+              <div class="form-row">
+            <div class="form-group col">
+              <input type="submit" (click)='additem()' [disabled]='!wellsform.valid' value="Add" class='form-control btn-primary'>
+              
+            </div>
+            <div class="form-group col">
+                <input type="submit" value="Back" class='form-control btn btn-info' routerLink='/main'>
+                
+            </div>
+        </div>
+          </form>
+         </div>
+       </div>
+      
+        
+  </div>

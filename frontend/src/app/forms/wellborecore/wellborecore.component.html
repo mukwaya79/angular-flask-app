@@ -1,0 +1,201 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-md-8 offset-2">
+       <h3 class="text-center">
+         Add Wellbore Core Data
+     </h3>
+ 
+     <br>
+     <form #wellborecoreform=ngForm class="bg-light">
+         <div class="form-row">
+         <div class="form-group col">
+           <label for="wellborename">WellBore Name</label>
+           <input type="text" [(ngModel)]='form.wellborename' name="wellborename" class="form-control" required>
+          
+         </div>
+         <div class="form-group col">
+           <label for="corenumber">Core Number</label>
+           <input type="number" [(ngModel)]='form.corenumber' name="corenumber" class="form-control">
+          
+         </div>
+         <div class="form-group col">
+           <label for="coredate">Core Date</label>
+           <input type="date" [(ngModel)]='form.coredate' name="coredate" class="form-control">
+          
+         </div>
+         <div class="form-group col">
+           <label for="coringcontractor">Coring Contractor</label>
+           <input type="text" [(ngModel)]='form.coringcontractor' name="coringcontractor" class="form-control">
+          </div>
+         </div>
+         <div class="form-row">
+         <div class="form-group col">
+           <label for="coretopmdrt">Core Top MDRT</label>
+           <input type="text" [(ngModel)]='form.coretopmdrt' name="coretopmdrt" class="form-control">
+          
+         </div>
+         <div class="form-group col">
+           <label for="corebottommdrt">Core Bottom MDRT</label>
+           <input type="text" [(ngModel)]='form.corebottommdrt' name="corebottommdrt" class="form-control">
+          
+         </div>
+         <div class="form-group col">
+           <label for="coretoptvd">Core Top TVD</label>
+           <input type="text" [(ngModel)]='form.coretoptvd' name="coretoptvd" class="form-control">
+          
+         </div>
+         <div class="form-group col">
+            <label for="corebottomtvd">Core Bottom TVD</label>
+           <input type="text" [(ngModel)]='form.corebottomtvd' name="corebottomtvd" class="form-control">
+          
+          </div>
+         </div>
+         <div class="form-row">
+         <div class="form-group col">
+           <label for="cutlength">Cut Length</label>
+           <input type="number" name="cutlength" [(ngModel)]='form.cutlength' class="form-control">
+          
+         </div>z
+         <div class="form-group col">
+           <label for="cutlengthtvd">Cut Length TVD</label>
+           <input type="number" [(ngModel)]='form.cutlengthtvd' name="cutlengthtvd" class="form-control">
+         </div>
+         <div class="form-group col">
+             <label for="recoveredlength">Recovered Length</label>
+             <input type="number" [(ngModel)]='form.recoveredlength' name="recoveredlength" class="form-control">
+           </div>
+           <div class="form-group col">
+             <label for="corerecovery">Core Recovery</label>
+             <input type="text" [(ngModel)]='form.corerecovery' name="corerecovery" class="form-control">
+           </div>
+           <div class="form-group col">
+             <label for="topformation">Top Formation</label>
+             <input type="text" [(ngModel)]='form.topformation' name="topformation" class="form-control">
+            </div>
+           </div>
+           <div class="form-row">
+           <div class="form-group col">
+             <label for="bottomformation">Bottom Formation Info</label>
+             <input type="text" [(ngModel)]='form.bottomformation' name="bottomformation" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+            <label for="corepicturesoftcopypath">Core Picture Softcopy Path</label>
+             <input type="text" [(ngModel)]='form.corepicturesoftcopypath' name="corepicturesoftcopypath" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+             <label for="corepicturehyperlink">Core Picture Hyperlink</label>
+             <input type="text" [(ngModel)]='form.corepicturehyperlink' name="corepicturehyperlink" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+             <label for="corereportsoftcopypath">Core Report Softcopy Path</label>
+             <input type="text" [(ngModel)]='form.corereportsoftcopypath' name="corereportsoftcopypath" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+             <label for="corereporthyperlink">Core Report Hyperlink</label>
+             <input type="text" [(ngModel)]='form.corereporthyperlink' name="corereporthyperlink" class="form-control">
+            </div>
+           </div>
+           <div class="form-row">
+           <div class="form-group col">
+             <label for="documentformat">Document Format</label>
+             <input type="text" [(ngModel)]='form.documentformat' name="documentformat" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+            <label for="filesize">File Size</label>
+            <input type="text" [(ngModel)]='form.filesize' name="filesize" class="form-control">
+           </div>
+           <div class="form-group col">
+             <label for="securitygrade">Security Grade</label>
+             <input type="text" [(ngModel)]='form.securitygrade' name="securitygrade" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+            <label for="openduedate">Open Due Date</label>
+            <input type="date" [(ngModel)]='form.openduedate' name="openduedate" class="form-control">
+            
+           </div>
+           
+           </div>
+           <div class="form-row">
+           <div class="form-group col">
+             <label for="documenttitle">Document Title</label>
+             <input type="text" [(ngModel)]='form.documenttitle' name="documenttitle" class="form-control">
+           </div>
+           <div class="form-group col">
+            <label for="comments">Comments</label>
+            <input type="text" [(ngModel)]='form.comments' name="comments" class="form-control">
+           </div>
+           <div class="form-group col">
+             <label for="receivedate">Recieve Date</label>
+             <input type="date" [(ngModel)]='form.receivedate' name="receivedate" class="form-control">
+            
+           </div>
+           </div>
+           <div class="form-row">
+           <div class="form-group col">
+             <label for="createdby">Created By</label>
+            <input type="text" [(ngModel)]='form.createdby' name="createdby" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+            <label for="datecreated">Date Created</label>
+             <input type="text" [(ngModel)]='form.datecreated' name="datecreated" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+            <label for="cored">Cored</label>
+            <input type="text" [(ngModel)]='form.cored' name="cored" class="form-control">
+           </div>
+           <div class="form-group col">
+            <label for="modifiedon">Modified On</label>
+             <input type="text" [(ngModel)]='form.modifiedon' name="modifiedon" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+            <label for="modifiedby">Modified By</label>
+            <input type="text" [(ngModel)]='form.modifiedby' name="modifiedby" class="form-control">
+           </div>
+           </div>
+           <div class="form-row">
+           <div class="form-group col">
+             <label for="pictureuploaddate">Picture Upload Date</label>
+            <input type="date" [(ngModel)]='form.pictureuploaddate' name="pictureuploaddate" class="form-control">
+           </div>
+           <div class="form-group col">
+            <label for="documentdate">Document Date</label>
+             <input type="date" [(ngModel)]='form.documentdate' name="documentdate" class="form-control">
+            
+           </div>
+           <div class="form-group col">
+             <label for="documentname">Document Name</label>
+            <input type="text" [(ngModel)]='form.documentname' name="documentname" class="form-control">
+            
+           </div>
+           
+           <div class="form-group">
+            <label for="reportuploaddate">Report Upload Date</label>
+           <input type="date" [(ngModel)]='form.reportuploaddate' name="reportuploaddate" class="form-control">
+           
+          </div>
+           </div>
+           <div class="form-row">
+            <div class="form-group col" >
+              <input type="submit" (click)='additem()' [disabled]='!wellborecoreform.valid' value="Add" class=" form-control btn btn-primary">
+             
+            </div>
+            <div class="form-group col">
+              <input routerLink="/main" type="submit" value="Back" class=' form-control btn btn-info '>
+            
+            </div>
+           </div>                         
+         
+       </form>
+      </div>
+    </div>
+    
+ </div>

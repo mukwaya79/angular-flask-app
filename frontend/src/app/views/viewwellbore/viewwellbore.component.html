@@ -1,0 +1,45 @@
+<div class="container">
+    <div >
+        <h2 class=" text-center mt-3 mb-3 bg-light">
+            <button type="submit" class="mr-5 btn btn-info" routerLink='/main'>
+            <i class="far fa-arrow-alt-circle-left mr-3"></i>Back
+            </button>   
+         Wellbore Data
+         <button type="submit" class="ml-5 btn btn-info" routerLink='/wellbore'>
+            <i class="far fa-arrow-alt-circle-left mr-3"></i>Add wellbore data
+            </button>  
+    </h2>
+    </div>
+    <table  class="table table-striped table-responsive-sm">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Wellbore official Name</td>
+                <td>Wellbore Local Name</td>
+                <td>Wellbore Alias Name</td>
+                <td>Wellbore Spud date</td>
+                <td>Spud Year</td>
+                <td>Wellbore type id</td>
+                <td>Initial Wellbore Purpose ID</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Wellbore.results">
+                <td>{{item.id}}</td>
+                <td>{{item.wellboreofficialname}}</td>
+                <td>{{item.wellborelocalname}}</td>
+                <td>{{item.wellborealiasname}}</td>
+                <td>{{item.wellborespuddate}}</td>
+                <td>{{item.spudyear}}</td>
+                <td>{{item.wellboretypeid}}</td>
+                <td>{{item.initialwellborepurposeid}}</td>
+                <td><a routerLink='/wellbore/update/{{item.id}}' ><i class="fas fa-user-edit point"></i></a></td>
+                <td><a (click)='removeitem(item.id)'><i class="far fa-trash-alt point" ></i></a></td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+

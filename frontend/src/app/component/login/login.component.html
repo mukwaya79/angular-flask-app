@@ -1,0 +1,40 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4 offset-4">
+        <h3 class='bg-light text-center' ><i class="fas fa-sign-out-alt mr-3"></i>Login</h3>
+        <form #loginform=ngForm >
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" [(ngModel)]='form.email' placeholder="Enter Email" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" [(ngModel)]='form.password' class="form-control" placeholder="Enter Password" required>
+          </div>
+          <div class="text-center">
+              <button type="submit" [disabled]='!loginform.valid' (click)='loginnow()' class='btn btn-primary btn-md' >Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+      
+        <br>
+        <div class="card card-body bg-outline-info">
+          demo account:
+          <hr>
+          email: mugisha@pau.go.ug|
+          password: benny&D!199B|
+          <hr>
+          email: authority@pau.go.ug|
+          password: wilson1995D|
+          <hr>
+          email: test@pau.go.ug|
+          password: !robert35Ted|
+          
+          <br>
+    
+        </div>
+        <br><br>
+        
+  </div>
+  

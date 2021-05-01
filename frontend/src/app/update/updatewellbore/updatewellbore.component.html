@@ -1,0 +1,64 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 offset-3">
+        <h3 class="text-center">
+          Update WellBore Data
+      </h3>
+      
+      <br>
+      <form #wellboreform=ngForm class="bg-light">
+          <div class="form-row">
+          <div class="form-group col">
+            <label for="wellboreofficialname">Wellbore Official Name</label>
+            <input type="text" [(ngModel)]='form.wellboreofficialname' name="wellboreofficialname" class="form-control" required>
+           
+          </div>
+          <div class="form-group col">
+            <label for="wellborelocalname">Wellbore Local Name</label>
+            <input type="text" [(ngModel)]='form.wellborelocalname' name="wellborelocalname" class="form-control">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="wellborealiasname">Wellbore Alias Name</label>
+            <input type="text" [(ngModel)]='form.wellborealiasname' name="wellborealiasname" class='form-control'>
+           
+          </div>
+          <div class="form-group col">
+            <label for="wellborespuddate">Wellbore Spud Date</label>
+            <input type="date" [(ngModel)]='form.wellborespuddate' name="wellborespuddate" class="form-control">
+        </div>
+          </div>
+          <div class="form-row">
+          <div class="form-group col">
+            <label for="spudyear" class="form-control-label">Spud Year</label>
+            <input type="text" [(ngModel)]='form.spudyear' name="spudyear" class='form-control'>
+           
+          </div>
+          <div class="form-group col">
+            <label for="wellboretypeid">Wellbore Type ID</label>
+            <input type="text" [(ngModel)]='form.wellboretypeid' name="wellboretypeid" class="form-control">
+           
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="initialwellborepurposeid">Initial Wellbore Purpose ID</label>
+            <input type="text" [(ngModel)]='form.initialwellborepurposeid' name="initialwellborepurposeid" class="form-control">
+          </div>
+      
+          <div class="form-row">
+            <div class="form-group col">
+              <input type="submit" [disabled]='!wellboreform.valid' (click)='updateitem()' value="Update" class='form-control btn-primary'>
+              
+            </div>
+            <div class="form-group col">
+                <input type="submit" value="Back" class='form-control btn btn-info' routerLink='/viewwellbore'>
+                
+            </div>
+        </div>
+        </form>
+        
+      </div>
+    </div>
+    
+</div>
